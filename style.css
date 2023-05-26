@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url("webfonts/Arizonia_Regular/stylesheet.css");
 *
 {
 	margin: 0;
@@ -7,6 +8,7 @@
 	font-family: 'Open Sans', sans-serif;
 
 }
+
 
 .container{
 	position: relative;
@@ -56,14 +58,15 @@ label:nth-child(3)
 
 }
 
-.content{
+.content {
 	position: relative;
 	width: 300vw;
 	display: flex;
 	transition: 0.5s;
+	
 }
 
-.content .box{
+.content .box {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
@@ -75,26 +78,30 @@ label:nth-child(3)
 
 }
 
-.content .box:nth-child(1){
+.content .box:nth-child(1) {
 	/*background: linear-gradient(90deg,#43cea2,#185a9d);*/
-	background-image: url("Home1.jpg");
+	background-image: url("Home1.2.jpg");
 	background-size: cover;
 }
 
-.content .box:nth-child(2){
+.content .box:nth-child(2) {
 	/*background: linear-gradient(90deg,#ff4e50,#f9d423);*/
+	background-image: url("Home3.1.jpg");
+	background-size: cover;
 }
 
 .content .box:nth-child(3){
 	/*background: linear-gradient(90deg,#9d50bb,#6e18aa);*/
+	background-image: url("Home2.jpg");
+	background-size: cover;
 }
-.tabs input:nth-child(1):checked ~ .content{
+.tabs input:nth-child(1):checked ~ .content {
 	left: 0;
 }
-.tabs input:nth-child(2):checked ~ .content{
+.tabs input:nth-child(2):checked ~ .content {
 left: -100vw;
 }
-.tabs input:nth-child(3):checked ~.content{
+.tabs input:nth-child(3):checked ~.content {
 	left: -200vw;
 }
 
@@ -102,31 +109,43 @@ left: -100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-		flex-direction: column;
-	gap: 10px;
+	flex-direction: column;
+	gap: 9px;
+	
 }
-.content .box .ContentBx ion-icon{
-	font-size: 12em;
-	color: #fff;
-	--ionicon-stroke-width: 16px;
+.content .box .ContentBx ion-icon {
+	font-size: 15em;
+	color: #FFF;
+	--ionicon-stroke-width: 20px;
 }
 
-.content .box .ContentBx h2{
-	font-size: 3em;
-	color: #fff;
-
+.content .box .ContentBx h2 {
+    font-size: 5em;
+    color: #FFF;
+    font-family: Arial;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px #1450F1;
+    text-transform: uppercase;
+    background-position: 0% 0%;
 }
+
+
+
 
 .content .box .ContentBx p{
-	font-size: 1.2em;
-	color: #fff;
-	max-width: 700px;
-	text-align: center;
+    font-size: 1.4em;
+    color: #F8B21B;
+    max-width: 700px;
+    text-align: center;
+    font-family: Arial;
+    
+   
 }
+
 
 .content .box .ContentBx button{
 	font-size: 1.2em;
-	text-decoration: none;
+	text-decoration: none;	
 	text-transform: uppercase;
 	padding: 15px 35px;
 	background: #fff;
@@ -138,7 +157,47 @@ left: -100vw;
 	border-radius: 40px;
 	transition: 0.5s;
 }
+.navbar-nav.mr-auto .nav-item .nav-link {
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+}
 
-.content .box .ContentBx button:hover{
+
+
+.box.Publish .ContentBx button:hover {
 	letter-spacing: 0.2em;
+}
+.box.Publish .ContentBx button a{
+	text-decoration: none;	
+	color: gold;
+}
+
+
+.box.Print .ContentBx button a{
+	text-decoration: none;	
+	color: gold;
+}
+.box.Print .ContentBx button:hover{
+	letter-spacing: 0.2em;
+}
+.box.Education .ContentBx button a{
+	text-decoration: none;	
+	color: gold;
+}
+.box.Education .ContentBx button:hover{
+	letter-spacing: 0.2em;
+}
+
+
+h2 a .img-fluid.rounded-circle {
+    position: relative;
+
+
+}
+.main {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
