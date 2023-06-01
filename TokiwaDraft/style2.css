@@ -1,0 +1,176 @@
+.container{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	overflow: hidden;
+}
+
+.tabs2 input{
+	visibility: hidden;
+	display: none;
+}
+
+.buttons{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50px);
+	display: flex;
+	gap: 10px;
+	z-index: 10000000;
+
+}
+
+.buttons2 label{
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	opacity: 0.5;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+	font-weight: bold;
+
+}
+
+.tabs2 input:nth-child(1):checked ~ .buttons2
+label:nth-child(1),
+.tabs2 input:nth-child(2):checked ~ .buttons2
+label:nth-child(2),
+.tabs2 input:nth-child(3):checked ~ .buttons2
+label:nth-child(3)
+
+{
+	opacity: 1;
+	width: 50px;
+
+}
+
+.content2 {
+	position: relative;
+	width: 300vw;
+	display: flex;
+	transition: 0.5s;
+	
+}
+
+.content2 .box {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	padding: 40px;
+}
+
+.content2 .box:nth-child(1) {
+	/*background: linear-gradient(90deg,#43cea2,#185a9d);*/
+	background-image: url("Home1.2.jpg");
+	background-size: cover;
+}
+
+.content2 .box:nth-child(2) {
+	/*background: linear-gradient(90deg,#ff4e50,#f9d423);*/
+	background-image: url("Home3.1.jpg");
+	background-size: cover;
+}
+
+.content2 .box:nth-child(3){
+	/*background: linear-gradient(90deg,#9d50bb,#6e18aa);*/
+	background-image: url("Home2.1.jpg");
+	background-size: cover;
+}
+.tabs2 input:nth-child(1):checked ~ .content2 {
+	left: 0;
+	
+}
+.tabs2 input:nth-child(2):checked ~ .content2 {
+left: -100vw;
+}
+.tabs2 input:nth-child(3):checked ~.content2 {
+	left: -200vw;
+}
+
+.content2 .box .ContentBx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 9px;
+	
+}
+.content2 .box .ContentBx ion-icon {
+	font-size: 15em;
+	color: #FFF;
+	--ionicon-stroke-width: 20px;
+}
+
+.content2 .box .ContentBx h2 {
+    font-size: 3em;
+    color: #FFF;
+    font-family: Arial;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px #1450F1;
+    text-transform: uppercase;
+    background-position: 0% 0%;
+}
+
+
+
+
+.content2 .box .ContentBx p{
+    font-size: 1em;
+    color: #fff;
+    max-width: 700px;
+    text-align: center;
+    font-family: Arial;
+	font-weight: bold
+    
+   
+}
+
+
+.content2 .box .ContentBx button{
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+	font-weight: bold;
+    padding: 15px 35px;
+	color: #000;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    transition: 0.5s;
+    background-color: #fff;
+	
+}
+.box.Learn .ContentBx button:hover {
+	letter-spacing: 0.2em;
+}
+.box.Info .ContentBx button a{
+	text-decoration: none;	
+	color: #000;
+}
+
+
+.box.Service .ContentBx button a{
+	text-decoration: none;	
+	color: #000;
+}
+.box.Info .ContentBx button:hover{
+	letter-spacing: 0.2em;*/
+	
+}
+.box.Service .ContentBx button a{
+	text-decoration: none;	
+	color: #000;
+}
+.box.Service .ContentBx button:hover{
+	letter-spacing: 0.2em;
+}
+
