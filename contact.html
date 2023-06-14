@@ -8,6 +8,7 @@
     <!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="style-contact.css" rel="stylesheet" type="text/css">
   </head>
   <body>
   	<!-- body code goes here -->
@@ -40,50 +41,73 @@
 				     </a> <a href="#">
 						<ion-icon name="mail-outline"></ion-icon>			
 			         </a>
-		  </div>
+	    </div>
 	<!-- Social Link ends here-->
 	  </div>
     </nav>
   </div>
-  <div class="tabs">
-<input id="publish" type="radio" name="slider" checked>
-			<input id="print" type="radio" name="slider">
-			<input id= "education" type="radio" name="slider">
-    <div class="buttons">
-              <label for="publish"></label>
-              <label for="print"></label>
-              <label for="education"></label>
+</div>
+	<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
     </div>
-    <div class="content">
-  <div class="box Publish">
-	  <div class="ContentBx">
-		  <ion-icon name="laptop-outline"></ion-icon>
-        <h2 class="text-center">Tokiwa Publishing</h2>
-		  <p>Publishing and Education Materials</p>
-				<button><a href="#">Learn More</a></button>
-		</div>
-		</div>
-		<div class="box Print">
-			<div class="ContentBx">
-				<ion-icon name="print-outline"></ion-icon>
-				<h2 class=>Tokiwa Printing</h2>
-				<p>Efficient and Quality Printing</p>
-				<button><a href="#">Learn More</a></button>
-			</div>
-		</div>
-		<div class="box Education">
-			<div class="ContentBx">
-				<ion-icon name="school-outline"></ion-icon>
-				<h2>Education</h2>
-				<p>We supply text books and other Educational materials</p>
-				<button><a href="#">Learn More</a></button>
-		</div>
-	</div>
-	    </div>
-</div>
-</div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname2">Company</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname2" name="lname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="emails" name="emails" placeholder="Enter your email..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Service</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>  
  
-	  </div>
+	 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
