@@ -1,0 +1,42 @@
+.print-slide{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    /*animation: animate 20s ease-in-out infinite;*/
+    background-image: url("Home5.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    color: #FFFFFF;
+}
+.print-slide a {
+	float: right;
+	margin-left: 5px;
+		text-decoration: none;	
+	color: #000;
+}
+.print-slide button{
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 35px;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    border-radius: 40px;
+    transition: 0.5s;
+    margin-right: 0px;
+    background-color: #FFFFFF;
+	display: flex;
+	
+}
+
+
+.print-slide button:hover{
+	letter-spacing: 0.5em;
+	color: #FF8600;
+}
